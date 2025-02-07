@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: rgba(128, 128, 128, 0.436);
 }
 
 
@@ -10,20 +11,61 @@ height: 35%;
 background-color: blue;
 display: flex;
 justify-content: center;
+border-radius: 4%;
 }
+
+.List1{
+    
+    display: flex;
+    height: 250px;
+    background-color: rgb(110, 110, 110);
+    width: 100%;
+    border-radius: 1%;
+    opacity: 80%;
+    justify-content: center;
+}
+
+.List2 {
+    height: 35%;
+    display: flex;
+    background-color: blue;
+    width: 500px;
+    height: 250px;
+    margin-left: 500px;
+    border-radius: 10%;
+    /* Add these 2 lines 👇 */
+    justify-content: center; /* Horizontal centering */
+    align-items: flex-start; /* Align to top */
+}
+/* -----------------------------------------------------button */
+.button1{
+    
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button1 :hover{
+    background-color: red;
+} 
 
 button{
     border-radius: 15%;
-    
-    margin-left: 25px;
-    width: 110%;
-}
-.button_1 :hover{
-    background-color: blue;
-    color: white;
+    width: 250px;
+    transition-duration: 0.5s;
 }
 
 
-.skibidi{
-    background-color: green;
+
+/* ------------------------------------------------------------------- */
+
+
+.List2 h1 {
+    text-align: center;
+    margin: 0;
+    /* Remove line-height: 250px */ 
+    /* Add this 👇 to maintain vertical position */
+    padding-top: 20px; /* Adjust this value to move text down from top */
 }
