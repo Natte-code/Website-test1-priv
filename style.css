@@ -1,3 +1,27 @@
+body{
+    margin: 0;
+}
+
+
+header {
+position: sticky;
+width: 100%;
+height: 35%;
+background-color: blue;
+display: flex;
+justify-content: center;
+}
+
+button{
+    margin-left: 25px;
+    
+}
+.button_1 :hover{
+    background-color: blue;
+    color: white;
+}
+
+
 .skibidi{
     background-color: green;
 }
