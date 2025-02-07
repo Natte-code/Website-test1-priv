@@ -13,8 +13,10 @@ justify-content: center;
 }
 
 button{
-    margin-left: 25px;
+    border-radius: 15%;
     
+    margin-left: 25px;
+    width: 110%;
 }
 .button_1 :hover{
     background-color: blue;
