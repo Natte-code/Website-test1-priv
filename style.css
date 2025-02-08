@@ -27,7 +27,7 @@ border-radius: 4%;
 
 .List2 {
     height: 35%;
-    display: flex;
+
     background-color: blue;
     width: 500px;
     height: 250px;
@@ -38,27 +38,105 @@ border-radius: 4%;
     align-items: flex-start; /* Align to top */
 }
 /* -----------------------------------------------------button */
-.button1{
-    overflow: hidden;
+.button1 {
     gap: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    /* Remove overflow: hidden from container */
 }
 
-.button1 :hover{
-    background-color: red;
-} 
-
-button{
-    overflow: hidden;
+.button1 button {
+    /* Visible styles */
+    position: relative;
+    background-color: #f0f0f0; /* Initial background color */
+    border: 2px solid #000000; /* Visible border */
+    color: #333; /* Text color */
+    
+    /* Sizing */
     height: 100px;
-    border-radius: 15%;
     width: 250px;
-    transition-duration: 0.5s;
+    
+    /* Styling */
+    border-radius: 15%;
+    box-sizing: border-box;
+    
+    /* Transition */
+    transition: all 0.5s ease;
+    
+    /* Remove overflow: hidden unless needed */
+    cursor: pointer; /* Add pointer cursor */
+    overflow: hidden;
+}
+.button1 .but1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://media.tenor.com/IVh7YxGaB_4AAAAe/nerd-emoji.png'); /* Add your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
+
+
+.button1 .but1:hover {
+    background-color: red;
+
+}
+
+/* Add this to your style.css */
+.button1 a .but2 {
+    position: relative;
+    overflow: hidden; /* Contain the image within rounded corners */
+    border: 2px solid #000000;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+/* Create image overlay pseudo-element */
+.button1 a .but2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://media.tenor.com/IVh7YxGaB_4AAAAe/nerd-emoji.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 15%; /* Match button's border radius */
+    z-index: 0; /* Place behind the number */
+}
+
+/* Hover effects */
+.button1 a .but2:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.button1 a .but2:hover::after {
+    opacity: 1; /* Reveal image on hover */
+}
+
+/* Keep number visible */
+.button1 a .but2 span {
+    position: relative;
+    z-index: 1; /* Ensure number stays above image */
+    transition: color 0.3s ease;
+}
+
+/* Optional: Change number color on hover */
+.button1 a .but2:hover span {
+    color: white; /* Makes number more visible against image */
+}
 
 
 /* ------------------------------------------------------------------- */
@@ -68,4 +146,9 @@ button{
     text-align: center;
     margin: 0;
     padding-top: 20px; /* Adjust this value to move text down from top */
+}
+
+.List2 tr td {
+    border-collapse: collapse;
+    border: 2px #000000 solid;
 }
