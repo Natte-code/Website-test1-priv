@@ -39,7 +39,7 @@ border-radius: 4%;
 }
 /* -----------------------------------------------------button */
 .button1{
-    
+    overflow: hidden;
     gap: 10px;
     display: flex;
     align-items: center;
@@ -52,6 +52,8 @@ border-radius: 4%;
 } 
 
 button{
+    overflow: hidden;
+    height: 100px;
     border-radius: 15%;
     width: 250px;
     transition-duration: 0.5s;
@@ -65,7 +67,5 @@ button{
 .List2 h1 {
     text-align: center;
     margin: 0;
-    /* Remove line-height: 250px */ 
-    /* Add this 👇 to maintain vertical position */
     padding-top: 20px; /* Adjust this value to move text down from top */
 }
