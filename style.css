@@ -1,3 +1,12 @@
+*{
+    --kaka: #87CEFA;
+    --color2: #00BFFF;
+
+
+}
+
+
+
 body{
     margin: 0;
     background-color: rgba(128, 128, 128, 0.436);
@@ -27,7 +36,7 @@ border-radius: 4%;
 
 .List2 {
     height: 35%;
-    
+    text-align: center;
     background-color: blue;
     width: 500px;
     height: 250px;
@@ -43,9 +52,10 @@ border-radius: 4%;
 
 
 .list_table {
+    
     display: flex;
     position: relative;
-    top: 25px;
+    top: 0px;
     left: 100px;
     width: 300px;
 
@@ -74,10 +84,21 @@ border-radius: 4%;
 
 
 
+.fisk{
+    position: relative;
+    background-image: linear-gradient(#87CEFA, #00BFFF);
+    width: 70%;
+    justify-self: center;
+    height: 800px;
+    
+}
 
-
-
-
+.fisk textarea{
+    border: 2px solid;
+    resize: none;
+    margin-top: 30px;
+    margin-left: 50px;
+}
 
 
 
