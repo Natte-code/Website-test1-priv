@@ -3,10 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Love You Forever ❤️</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ff758c, #ff7eb3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+        }
+
+        .love-text {
+            color: white;
+            font-size: 3.5rem;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+            position: relative;
+            z-index: 10;
+            opacity: 0;
+            animation: fadeInText 3s forwards;
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        .quote {
+            font-size: 1.8rem;
+            color: white;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .heart {
+            position: absolute;
+            color: #ff3d6f;
+            font-size: 20px;
+            top: -5%;
+            animation: rain 4s linear infinite;
+        }
+
+        @keyframes rain {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+
+        .buttons {
+            margin-top: 20px;
+            z-index: 10;
+        }
+
+        button {
+            background: #ff3d6f;
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            margin: 5px;
+            font-size: 1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background: #c6004c;
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
-    <h1>I love you</h1>
+
+    <h1 class="love-text">Jag älskar dig Ella❤️</h1>
+
+    <p class="quote">Clicka mig 💖</p>
+
+    <div class="buttons">
+        <button onclick="addMoreHearts()">Mer överaskningar 💕</button>
+        <button onclick="goBack()">Tillbaka till huvudsidan 🔙</button>
+    </div>
+
+    <script>
+        const quotes = [
+            "Utan dig är jag ingenting 💞",
+            "Ella, Du är det bästa jag någonsin haft i det här livet 💖",
+            "Din röst är så fantastisk, Tack för du är vem du är ❤️",
+            "Utan dig hade jag inte varit här med dig 💕",
+            "Du gör mig oändligt glad 💘",
+            "Våran relation är min skatt💖",
+            "Ditt leende är mitt livs linje🥰",
+            "Gud skapade ett mirakel. Miraklet heter Ella❤️"
+        ];
+
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.innerHTML = "💖";
+            heart.classList.add("heart");
+            document.body.appendChild(heart);
+
+            const size = Math.random() * 30 + 10 + "px";
+            heart.style.fontSize = size;
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = Math.random() * 2 + 4 + "s";
+
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+
+        function addMoreHearts() {
+            for (let i = 0; i < 20; i++) { // Even more hearts!
+                createHeart();
+            }
+            document.querySelector('.quote').style.opacity = '1';
+            document.querySelector('.quote').innerText = quotes[Math.floor(Math.random() * quotes.length)];
+        }
+
+        function goBack() {
+            window.location.href = "https://natte-code.github.io/Website-test1-priv/";
+        }
+
+        setInterval(createHeart, 200); // Faster heart rain
+    </script>
+
 </body>
 </html>

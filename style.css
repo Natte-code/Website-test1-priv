@@ -27,7 +27,7 @@ border-radius: 4%;
 
 .List2 {
     height: 35%;
-
+    
     background-color: blue;
     width: 500px;
     height: 250px;
@@ -36,7 +36,78 @@ border-radius: 4%;
     /* Add these 2 lines 👇 */
     justify-content: center; /* Horizontal centering */
     align-items: flex-start; /* Align to top */
+
 }
+
+
+
+
+.list_table {
+    display: flex;
+    position: relative;
+    top: 25px;
+    left: 100px;
+    width: 300px;
+
+    background-color: green;
+    border-radius: 5%;
+    border: 2px solid;
+}
+
+.list_table table {
+    padding: 10px;
+    border-radius: 5%;
+}
+
+
+.List2 tr {
+    text-align: center;
+    margin: 0;
+    padding-top: 20px; /* Adjust this value to move text down from top */
+}
+
+.List2 td{
+    border-collapse: collapse;
+    border: 2px #000000 solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -----------------------------------------------------button */
 .button1 {
     gap: 10px;
@@ -142,13 +213,5 @@ border-radius: 4%;
 /* ------------------------------------------------------------------- */
 
 
-.List2 h1 {
-    text-align: center;
-    margin: 0;
-    padding-top: 20px; /* Adjust this value to move text down from top */
-}
 
-.List2 tr td {
-    border-collapse: collapse;
-    border: 2px #000000 solid;
-}
+/* ---------------------------------------------- love css*/
