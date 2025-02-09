@@ -35,6 +35,7 @@ border-radius: 4%;
 }
 
 .List2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 35%;
     text-align: center;
     background-color: blue;
@@ -52,7 +53,9 @@ border-radius: 4%;
 
 
 .list_table {
-    
+    overflow: hidden;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     position: relative;
     top: 0px;
@@ -85,15 +88,25 @@ border-radius: 4%;
 
 
 .fisk{
-    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
     background-image: linear-gradient(#87CEFA, #00BFFF);
     width: 70%;
     justify-self: center;
     height: 800px;
+    flex-wrap: nowrap;
     
 }
 
 .fisk textarea{
+    display: flex;
+    justify-self: center;
+    align-items: center;
     border: 2px solid;
     resize: none;
     margin-top: 30px;
@@ -102,7 +115,9 @@ border-radius: 4%;
 
 
 
-
+.höger img{
+    width: 40%;
+}
 
 
 
@@ -193,6 +208,7 @@ border-radius: 4%;
 
 /* Create image overlay pseudo-element */
 .button1 a .but2::after {
+    border: 2px solid black;
     content: "";
     position: absolute;
     top: 0;
