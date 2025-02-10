@@ -91,38 +91,63 @@ border-radius: 4%;
     margin-top: 50px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
 
-    gap: 20px;
+    justify-content: center;
+    gap: 40px;
+
     background-image: linear-gradient(#87CEFA, #00BFFF);
-    width: 70%;
+    width: 75%;
     justify-self: center;
     height: 800px;
     flex-wrap: nowrap;
+    border-radius: 5%;
     
+}
+.vänster, .höger{
+    flex: 1;
+    max-width: 40%;
+}
+
+.höger{
+    position: relative;
+    padding-top: 15px;
+    overflow:hidden;
+    object-fit: fill;
 }
 
 .fisk textarea{
     display: flex;
-    justify-self: center;
-    align-items: center;
+    align-self: first baseline;
     border: 2px solid;
     resize: none;
     margin-top: 30px;
     margin-left: 50px;
 }
 
-
-
-.höger img{
-    width: 40%;
+div.gallery{
+    margin: 30px;
+    border: 3px solid black;
+    float: left;
+    width: 500px;
+    overflow: hidden;
 }
 
 
+div.gallery img{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
 
-
+div.h1_desc{
+    padding: 16px;
+    text-align:start;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
 
 
 
