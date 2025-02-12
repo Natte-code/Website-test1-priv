@@ -160,6 +160,21 @@ border-radius: 4%;
 }
 
 
+.HELPS{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    margin: 10px ;
+    padding: 25px;
+    position: relative;
+    text-align: center;
+background-color: pink;
+width: 25%;
+justify-self: center;}
+
+.HELPS a:visited{
+color: white;
+}
 
 
 
@@ -283,6 +298,25 @@ border-radius: 4%;
 }
 
 
+div.gallery {
+    margin: 5px;
+    border: 1px solid #000000;
+    float: left;
+    width: 90%;
+  }
+
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.h1_desc {
+    padding: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+
+  }
 
 
 
