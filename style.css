@@ -1,5 +1,15 @@
+*{
+    --kaka: #87CEFA;
+    --color2: #00BFFF;
+
+
+}
+
+
+
 body{
     margin: 0;
+    background-color: rgba(128, 128, 128, 0.436);
 }
 
 
@@ -10,20 +20,345 @@ height: 35%;
 background-color: blue;
 display: flex;
 justify-content: center;
+border-radius: 4%;
 }
 
-button{
-    border-radius: 15%;
+.List1{
     
-    margin-left: 25px;
-    width: 110%;
+    display: flex;
+    height: 250px;
+    background-color: rgb(110, 110, 110);
+    width: 100%;
+    border-radius: 1%;
+    opacity: 80%;
+    justify-content: center;
 }
-.button_1 :hover{
+
+.List2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 35%;
+    text-align: center;
     background-color: blue;
-    color: white;
+    width: 500px;
+    height: 250px;
+    margin-left: 500px;
+    border-radius: 10%;
+    /* Add these 2 lines 👇 */
+    justify-content: center; /* Horizontal centering */
+    align-items: flex-start; /* Align to top */
+
 }
 
 
-.skibidi{
+
+
+.list_table {
+    overflow: hidden;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    position: relative;
+    top: 0px;
+    left: 100px;
+    width: 300px;
+
     background-color: green;
+    border-radius: 5%;
+    border: 2px solid;
 }
+
+.list_table table {
+    padding: 10px;
+    border-radius: 5%;
+}
+
+
+.List2 tr {
+    text-align: center;
+    margin: 0;
+    padding-top: 20px; /* Adjust this value to move text down from top */
+}
+
+.List2 td{
+    border-collapse: collapse;
+    border: 2px #000000 solid;
+}
+
+
+
+
+.fisk{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    gap: 40px;
+
+    background-image: linear-gradient(#87CEFA, #00BFFF);
+    width: 75%;
+    justify-self: center;
+    height: 800px;
+    flex-wrap: nowrap;
+    border-radius: 5%;
+    
+}
+.vänster, .höger{
+    flex: 1;
+    max-width: 40%;
+}
+
+.höger{
+    position: relative;
+    padding-top: 15px;
+    overflow:hidden;
+    object-fit: fill;
+}
+
+.fisk textarea{
+    display: flex;
+    align-self: first baseline;
+    border: 2px solid;
+    resize: none;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+
+
+
+
+.fisk table{
+    margin-top: 25px;
+    border-collapse: collapse
+}
+
+
+.fisk th{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+
+    border-bottom: 2px solid;
+}
+
+.fisk td{
+    padding-top: 10px;
+
+}
+.tar {
+    text-align: center;
+    border-bottom: 2px black solid;
+}
+
+.tad1{
+    border-left: 2px black solid;
+}
+
+.tad2{
+
+    border-right: 2px black solid;
+}
+
+
+.HELPS{
+    gap: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    margin: 10px ;
+    padding: 25px;
+    position: relative;
+    text-align: center;
+background-color: pink;
+width: 25%;
+justify-self: center;}
+
+.HELPS a:hover{
+    text-decoration: none;
+    color: rgb(255, 0, 43);
+}
+
+.HELPS a:visited{
+    text-decoration: none;
+
+}
+
+.HELPS a{
+    border-radius: 2%;
+    gap: 5px;
+    margin: 5px;
+    background-color: #000000;
+    padding: 2px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* -----------------------------------------------------button */
+.button1 {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* Remove overflow: hidden from container */
+}
+
+.button1 button {
+    /* Visible styles */
+    position: relative;
+    background-color: #f0f0f0; /* Initial background color */
+    border: 2px solid #000000; /* Visible border */
+    color: #333; /* Text color */
+    
+    /* Sizing */
+    height: 100px;
+    width: 250px;
+    
+    /* Styling */
+    border-radius: 15%;
+    box-sizing: border-box;
+    
+    /* Transition */
+    transition: all 0.5s ease;
+    
+    /* Remove overflow: hidden unless needed */
+    cursor: pointer; /* Add pointer cursor */
+    overflow: hidden;
+}
+.button1 .but1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://media.tenor.com/IVh7YxGaB_4AAAAe/nerd-emoji.png'); /* Add your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+
+.button1 .but1:hover {
+    background-color: red;
+
+}
+
+/* Add this to your style.css */
+.button1 a .but2 {
+    position: relative;
+    overflow: hidden; /* Contain the image within rounded corners */
+    border: 2px solid #000000;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+/* Create image overlay pseudo-element */
+.button1 a .but2::after {
+    border: 2px solid black;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://media.tenor.com/IVh7YxGaB_4AAAAe/nerd-emoji.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 15%; /* Match button's border radius */
+    z-index: 0; /* Place behind the number */
+}
+
+/* Hover effects */
+.button1 a .but2:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.button1 a .but2:hover::after {
+    opacity: 1; /* Reveal image on hover */
+}
+
+/* Keep number visible */
+.button1 a .but2 span {
+    position: relative;
+    z-index: 1; /* Ensure number stays above image */
+    transition: color 0.3s ease;
+}
+
+/* Optional: Change number color on hover */
+.button1 a .but2:hover span {
+    color: white; /* Makes number more visible against image */
+}
+
+
+/* ------------------------------------------------------------------- Gallery*/
+
+.head{
+    display: flex;
+    position: relative;
+    background-color: #000000;
+    width: 2000px;
+}
+
+
+.gallery{
+    position: relative;
+    width: 100%;
+    
+}
+
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #000000;
+    float: left;
+    width: 90%;
+  }
+
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.h1_desc {
+    padding: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------- love css*/
